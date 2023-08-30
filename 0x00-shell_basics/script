@@ -5,7 +5,6 @@ ARG=$2
 touch $FILE && chmod u+x $FILE
 echo '#!/bin/bash' > $FILE
 echo $ARG >> $FILE
-echo >> $FILE
 
 wc -l $FILE
 ./run
